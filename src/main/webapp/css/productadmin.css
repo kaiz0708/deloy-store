@@ -1,0 +1,16 @@
+.circle-image {
+  display: block;
+  max-height: 100%;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: auto;
+  border: 3px solid #163c1d;
+}
+
+.btn {
+  font-size: 18px;
+}
+.tdButton {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

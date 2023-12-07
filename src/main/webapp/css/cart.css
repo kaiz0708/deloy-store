@@ -1,0 +1,91 @@
+tbody td {
+  position: relative;
+}
+thead th {
+  color: #ff4500;
+  text-align: center;
+} 
+p{
+ margin: 0 !important;
+}
+sub{
+  position: unset !important;
+
+}
+tbody td div {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  place-items: center;
+}
+.cart {
+  width: 60%;
+  margin: auto;
+  z-index: 1;
+  padding-top: 30px;
+  position: absolute;
+  right: -100%;
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  overflow-y: scroll;
+  max-height: 50%;
+  transition: all 0.5s ease;
+  border-left: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
+.cart.active {
+  right: 0;
+}
+.cart table {
+  width: 100%;
+}
+tbody tr {
+  height: 100px;
+  border-bottom: 1px solid #000;
+}
+.cart .titleTable {
+  font-size: 20px;
+}
+.cart .imgItems img {
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+/* .cart .deleteProductOption .boxDeleteBtn {
+  height: 20px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  place-items: center;
+} */
+.cart .deleteProductOption .deleteBtn {
+  border: none;
+  background-color: #fcc210;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  width: max-content;
+  height: 20px;
+}
+.cart .deleteProductOption .deleteBtn:hover {
+  background-color: #ff4500;
+  color: #ffffff;
+}
+.cart .amountsItems input {
+  width: 30px;
+  outline: none;
+  text-align: center;
+}
+.totalPriceCart {
+  display: flex;
+  justify-content: end;
+  margin-top: 18px;
+  font-size: 20px;
+}
